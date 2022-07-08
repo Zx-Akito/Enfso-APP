@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'sass:math';
+
+// Fonts
+@import './assets/scss/common/fonts';
+@import '~bootstrap-scss/bootstrap';
+// Bootstrap
+
+
+@import './assets/scss/common/variable';
+@import './assets/scss/common/mixin';
+
+// style for component
+@import './assets/scss/common/global';
+@import './assets/scss/common/helper';
+@import './assets/scss/common/typography';

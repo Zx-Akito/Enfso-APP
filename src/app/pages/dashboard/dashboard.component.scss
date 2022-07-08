@@ -1,0 +1,162 @@
+@import '../../../assets/scss/common/variable';
+@import '../../../assets/scss/bootstrap/button';
+
+.container-dashboard{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 32px;
+
+    .detail{
+        display: flex;
+        width: 700px;
+        height: 360px;
+        background-color: $color-white;
+        border-radius: 20px;
+
+        img{
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .detail-product{
+            margin-top: 24px;
+            margin-left: 24px;
+
+            .user-area{
+                display: flex;
+                img{
+                    width: 40px;
+                    border-radius: 50px;
+                    margin-left: 0px;
+                }
+
+                .detail-user{
+                    margin: 20px 0px 0 11px;
+    
+                    span{
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #12142D;
+                    }
+                    p{
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #808080;
+                    }
+                }
+            }
+
+            .detail-bid{
+                display: flex;
+                background: #ECF6FF;
+                width: 275px;
+                height: 82px;
+                border-radius: 15px;
+                
+                .title{
+                    padding-top: 21px;
+                    margin-bottom: 21px;
+                    margin-left: 27px;
+
+                    span{
+                        font-size: 11px;
+                    }
+
+                    h6{
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            .btn-property{
+                display: flex;
+                
+                img{
+                    margin-left: 0px;
+                }
+
+                button{
+                    margin-left: 10px;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+
+            h4{
+                font-weight: 500;
+                font-size: 29px;
+            }
+            
+            p{
+                color: #808080;
+            }
+        }
+    }
+
+    .content-side{
+        margin-top: -150px;
+        width: 376px;
+        height: 100vh;
+        background-color: $color-white;
+    
+        .container-content{
+            margin-left: 36px;
+            margin-right: 36px;
+    
+            .wrapper{
+                padding-top: 34px;
+    
+                a img{
+                    margin-left: 20px;
+                }
+    
+                .user-img{
+                    float: right;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+    
+                .withdraw{
+                    background: #F2F9FF;
+                    margin-top: 115px;
+                    width: 100%;
+                    height: 243px;
+                    border-radius: 25px;
+                    text-align: center;
+    
+                    h6{
+                        font-size: 12px;
+                        font-weight: 600;
+                        padding-top: 27px;
+                    }
+    
+                    h2{
+                        color: $color-primary;
+                    }
+    
+                    span{
+                        font-weight: 400;
+                    }
+    
+                    button{
+                        font-weight: 400;
+                    }
+                }
+
+                .detail-side{
+                    display: flex;
+                    width: 100%;
+                    margin-top: 30px;
+
+                    .title-side{
+                        margin-top: 15px;
+                        margin-left: 15px;
+                        margin-right: 23px;
+                    }
+                }
+            }
+        }
+    }
+}

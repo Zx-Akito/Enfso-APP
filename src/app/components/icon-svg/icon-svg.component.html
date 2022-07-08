@@ -1,0 +1,43 @@
+<ng-container [ngSwitch]="name">
+
+    <svg *ngSwitchCase="'nav-item1'" [ngClass]="className" [attr.width]="size" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="6" height="6" rx="1.5" [attr.stroke]="stroke"/>
+        <rect x="9.5" y="0.5" width="6" height="6" rx="1.5" [attr.stroke]="stroke"/>
+        <rect x="9.5" y="9.5" width="6" height="6" rx="1.5" [attr.stroke]="stroke"/>
+        <rect x="0.5" y="9.5" width="6" height="6" rx="1.5" [attr.stroke]="stroke"/>
+    </svg>
+
+    <svg *ngSwitchCase="'nav-item2'" [ngClass]="className" [attr.width]="size" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2H4C2 2 1 3 1 4.5V15C1 16 2 17 3 17H14C15 17 16 16 16 15V7" [attr.stroke]="stroke"/>
+        <path d="M13.5 3.00001C13.5 0.333404 17.5 0.333308 17.5 2.99993C17.5 5.66666 13.5 5.66672 13.5 3.00001Z" [attr.stroke]="stroke"/>
+        <path d="M5 12L7.5 8L10.5 11L13 7" [attr.stroke]="stroke"/>
+    </svg>
+
+    <svg *ngSwitchCase="'nav-item3'" [ngClass]="className" [attr.width]="size" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.674 2.31462C15.2855 1.89784 14.8242 1.56723 14.3165 1.34167C13.8088 1.1161 13.2646 1 12.715 1C12.1655 1 11.6213 1.1161 11.1136 1.34167C10.6059 1.56723 10.1446 1.89784 9.75609 2.31462L8.9498 3.17916L8.14351 2.31462C7.35875 1.47316 6.29439 1.00044 5.18457 1.00044C4.07475 1.00044 3.01039 1.47316 2.22563 2.31462C1.44087 3.15607 1 4.29733 1 5.48733C1 6.67732 1.44087 7.81858 2.22563 8.66004L3.03192 9.52458L8.9498 15.87L14.8677 9.52458L15.674 8.66004C16.0627 8.24346 16.371 7.74885 16.5814 7.20447C16.7917 6.66008 16.9 6.07659 16.9 5.48733C16.9 4.89806 16.7917 4.31457 16.5814 3.77018C16.371 3.2258 16.0627 2.73119 15.674 2.31462V2.31462Z" [attr.stroke]="stroke" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+        
+    <svg *ngSwitchCase="'nav-item4'" [ngClass]="className" [attr.width]="size" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 2.64795C17 1.66612 16.1111 0.869995 15.2222 0.87019H9H2.77778C1.79594 0.87019 1 1.66612 1 2.64795V15.0922C1 16.0741 1.79594 16.87 2.77778 16.87H15.2222C16.2041 16.87 17 16.0741 17 15.0922V2.64795Z" [attr.stroke]="stroke" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 5.31458V12.4256" [attr.stroke]="stroke" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.44434 8.87009H12.5554" [attr.stroke]="stroke" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+        
+    <svg *ngSwitchCase="'nav-item5'" [ngClass]="className" [attr.width]="size" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="path-1-inside-1_28_51" fill="white">
+        <path d="M0 4.87C0 2.66086 1.79086 0.869995 4 0.869995H14C16.2091 0.869995 18 2.66086 18 4.87V12.87C18 15.0791 16.2091 16.87 14 16.87H4C1.79086 16.87 0 15.0791 0 12.87V4.87Z"/>
+        </mask>
+        <path d="M-1 4.87C-1 2.10857 1.23858 -0.130005 4 -0.130005H13C15.7614 -0.130005 18 2.10857 18 4.87C18 3.21314 16.2091 1.87 14 1.87H4C2.34315 1.87 1 3.21314 1 4.87H-1ZM18 12.87C18 15.6314 15.7614 17.87 13 17.87H4C1.23858 17.87 -1 15.6314 -1 12.87H1C1 14.5268 2.34315 15.87 4 15.87H14C16.2091 15.87 18 14.5268 18 12.87ZM4 17.87C1.23858 17.87 -1 15.6314 -1 12.87V4.87C-1 2.10857 1.23858 -0.130005 4 -0.130005V1.87C2.34315 1.87 1 3.21314 1 4.87V12.87C1 14.5268 2.34315 15.87 4 15.87V17.87ZM18 0.869995V16.87V0.869995Z" fill="#7E8AA3" mask="url(#path-1-inside-1_28_51)"/>
+        <mask id="path-3-outside-2_28_51" maskUnits="userSpaceOnUse" x="10" y="5.87" width="7" height="8" fill="black">
+        <rect fill="white" x="10" y="5.87" width="7" height="8"/>
+        <path d="M11 9.87C11 8.21314 12.3431 6.87 14 6.87H17V12.87H14C12.3431 12.87 11 11.5268 11 9.87Z"/>
+        </mask>
+        <path d="M10.4 9.87C10.4 7.88177 12.0118 6.27 14 6.27H17V7.47H14C12.6745 7.47 11.6 8.54451 11.6 9.87H10.4ZM17 13.47H14C12.0118 13.47 10.4 11.8582 10.4 9.87H11.6C11.6 11.1955 12.6745 12.27 14 12.27H17V13.47ZM14 13.47C12.0118 13.47 10.4 11.8582 10.4 9.87C10.4 7.88177 12.0118 6.27 14 6.27V7.47C12.6745 7.47 11.6 8.54451 11.6 9.87C11.6 11.1955 12.6745 12.27 14 12.27V13.47ZM17 6.87V12.87V6.87Z" fill="#7E8AA3" mask="url(#path-3-outside-2_28_51)"/>
+        <mask id="path-5-inside-3_28_51" fill="white">
+        <path d="M12 9.87C12 8.76543 12.8954 7.87 14 7.87H18V11.87H14C12.8954 11.87 12 10.9746 12 9.87Z"/>
+        </mask>
+        <path d="M11.4 9.86999C11.4 8.43405 12.5641 7.27 14 7.27H18V8.47H14C13.2268 8.47 12.6 9.0968 12.6 9.87L11.4 9.86999ZM18 12.47H14C12.5641 12.47 11.4 11.3059 11.4 9.87H12.6C12.6 10.6432 13.2268 11.27 14 11.27H18V12.47ZM14 12.47C12.5641 12.47 11.4 11.3059 11.4 9.87V9.86999C11.4 8.43405 12.5641 7.27 14 7.27L14 8.47C13.2268 8.47 12.6 9.0968 12.6 9.87C12.6 10.6432 13.2268 11.27 14 11.27L14 12.47ZM18 7.87V11.87V7.87Z" fill="#7E8AA3" mask="url(#path-5-inside-3_28_51)"/>
+        <path d="M4 5.87L11 5.87" [attr.stroke]="stroke" stroke-width="0.8"/>
+    </svg>
+        
+</ng-container>

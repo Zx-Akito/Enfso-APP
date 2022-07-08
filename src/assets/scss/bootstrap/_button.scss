@@ -1,0 +1,48 @@
+
+.btn{
+    border-radius: 35px;
+    border: none;
+    transition: 0.3s ease;
+
+    // &:disabled {
+       
+    // }
+
+    &.btn-primary{
+        background: $color-primary;
+        
+        &:hover{
+            background: #4F31CC;
+        }
+    }
+
+    &.btn-darkblue{
+        background: $color-dark-blue;
+        color: #ffff;
+
+        &:hover{
+            background: #4E4F61;
+        }
+    }
+
+    &.btn-white{
+        background: $color-white;
+        border: 1px solid;
+        
+        &:hover{
+            background: #dbdbdb;
+        }
+    }
+
+    &.btn-lg{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 29px;
+        padding-left: 29px;
+    }
+
+    &.btn-md{
+        width: 107px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,80 @@
+@use 'sass:math';
+
+/*
+Color
+=========================== */
+$color-title: #3A3A3A;
+$color-content: #6a6a6a;
+$color-primary: #6F4EF3;
+$color-primary2: #11388E;
+$color-primary3: #184BAA;
+$color-dark-blue: #12142D;
+$body-bg: #f5f7f8;
+$color-danger: #FD4242;
+$color-secondary: #34495e;
+$color-warning: #f1c40f;
+$color-success: #2ecc71;
+$color-info: #3498db;
+$color-aqua: #4bccd8;
+$color-aqua2: #A1CEFF;
+$color-border: #E5E5E5;
+$color-white5: #E9ECEF;
+$color-white4: #F2F2F2;
+$color-white3: #FAFAFA;
+$color-white2: #F9F9F9;
+$color-gray2: #7E8AA3;
+$color-gray: #E9E3FD;
+
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+$color-filter-primary: invert(27%) sepia(100%) saturate(1322%) hue-rotate(198deg) brightness(95%) contrast(88%);
+
+
+:root {
+    --color-primary: #337ab7;
+    --color-primary2: #2b6aa1;
+    --color-text: #6a6a6a;
+}
+
+/*
+Font Family
+=========================== */
+$font-family: 'Inter', sans-serif;
+
+/*
+Font Size
+=========================== */
+$fs-lg: 24px;
+$fs-md: 18px;
+$fs-default: 12px;
+
+/*
+Radius Style
+=========================== */
+$br-none: 0;
+$br-circle: 50%;
+$br-lg: 30px;
+$br-sm: 5px;
+$br-xs: 3px;
+
+/*
+Radius Style
+=========================== */
+$shadow-content: 3px 3px 30px rgba(112, 112, 112, 0.08);
+$shadow-overlay: 3px 3px 30px rgba(112, 112, 112, 0.08);
+
+/*
+helper spacing Style
+=========================== */
+$sp-0: 0;
+$sp-1: 5px;
+$sp-2: 10px;
+$sp-3: 15px;
+$sp-4: 20px;
+$sp-5: 25px;
+$sp-6: 30px;
+$sp-7: 35px;
+$sp-8: 40px;
+$sp-9: 45px;
+$sp-10: 50px;

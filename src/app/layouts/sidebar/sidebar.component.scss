@@ -1,0 +1,73 @@
+@import '../../../assets/scss/common/variable';
+
+.sidebar{
+    position: fixed;
+    width: 220px;
+    height: 100vh;
+    background-color: $color-white;
+
+    .container-sidebar{
+        margin-left: 20px;
+        margin-right: 20px;
+
+        .wrapper{
+            display: flex;
+            padding-top: 34px;
+
+            .brand{
+                color: $color-primary;
+                margin-top: 15px;
+                margin-left: 8px;
+                font-weight: 500;
+            }
+
+            .minimize{
+                margin-left: auto;
+                background: transparent;
+                border: 0;
+            }
+        }
+
+        .item-sidebar{
+            margin-top: 20px;
+
+            .navbar-nav{
+                .nav-item{
+                    margin-top: 20px;
+
+                    &.active{
+                        background: $color-gray;
+                        border-radius: 35px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+
+                        a{
+                            color: $color-primary;
+                            font-weight: 600;
+                        }
+                    }
+
+                    
+    
+                    a{
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $color-gray2;
+
+                        .icon-svg{
+                            margin-bottom: 2px;
+                            margin-right: 15px;
+                            margin-left: 20px;
+
+                            svg{
+                            margin-bottom: 20px;
+                                
+                            }
+                        }
+                    }
+                } 
+            } 
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.wrap{
+    display: flex;
+    height: 100vh;
+
+    .sidebar{
+        flex: 1;
+        max-width: 220px;
+    }
+
+    .router{
+        flex: 1;
+        flex-direction: column;
+        display: flex;
+
+        .wrap-header{
+            z-index: 99;
+        }
+    }
+}

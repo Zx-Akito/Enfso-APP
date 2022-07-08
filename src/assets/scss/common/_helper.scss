@@ -1,0 +1,300 @@
+@use "sass:map";
+@use 'sass:math';
+
+$base-spacing: 5px;
+$base-radius: 30px;
+
+$utilities: (
+    "margin": (
+        "prefix": "m",
+        "values": (
+            "0": 0,
+            "1": $base-spacing * 1,
+            "2": $base-spacing * 2,
+            "3": $base-spacing * 3,
+            "4": $base-spacing * 4,
+            "5": $base-spacing * 5,
+            "6": $base-spacing * 6,
+            "7": $base-spacing * 7,
+            "8": $base-spacing * 8,
+            "9": $base-spacing * 9,
+            "10": $base-spacing * 10
+        ),
+    ),
+    "margin-left": (
+        "prefix": "m-left",
+        "values": (
+            "0": 0,
+            "1": $base-spacing * 1,
+            "2": $base-spacing * 2,
+            "3": $base-spacing * 3,
+            "4": $base-spacing * 4,
+            "5": $base-spacing * 5,
+            "6": $base-spacing * 6,
+            "7": $base-spacing * 7,
+            "8": $base-spacing * 8,
+            "9": $base-spacing * 9,
+            "10": $base-spacing * 10
+        ),
+    ),
+    "margin-right": (
+        "prefix": "m-right",
+        "values": (
+            "0": 0,
+            "1": $base-spacing * 1,
+            "2": $base-spacing * 2,
+            "3": $base-spacing * 3,
+            "4": $base-spacing * 4,
+            "5": $base-spacing * 5,
+            "6": $base-spacing * 6,
+            "7": $base-spacing * 7,
+            "8": $base-spacing * 8,
+            "9": $base-spacing * 9,
+            "10": $base-spacing * 10
+        ),
+    ),
+    "margin-top": (
+        "prefix": "m-top",
+        "values": (
+            "0": 0,
+            "1": $base-spacing * 1,
+            "2": $base-spacing * 2,
+            "3": $base-spacing * 3,
+            "4": $base-spacing * 4,
+            "5": $base-spacing * 5,
+            "6": $base-spacing * 6,
+            "7": $base-spacing * 7,
+            "8": $base-spacing * 8,
+            "9": $base-spacing * 9,
+            "10": $base-spacing * 10
+        ),
+    ),
+    "margin-bottom": (
+        "prefix": "m-bottom",
+        "values": (
+            "0": 0,
+            "1": $base-spacing * 1,
+            "2": $base-spacing * 2,
+            "3": $base-spacing * 3,
+            "4": $base-spacing * 4,
+            "5": $base-spacing * 5,
+            "6": $base-spacing * 6,
+            "7": $base-spacing * 7,
+            "8": $base-spacing * 8,
+            "9": $base-spacing * 9,
+            "10": $base-spacing * 10
+        ),
+    ),
+    "padding": (
+        "prefix": "p",
+        "values": (
+            "0": 0,
+            "1": $base-spacing * 1,
+            "2": $base-spacing * 2,
+            "3": $base-spacing * 3,
+            "4": $base-spacing * 4,
+            "5": $base-spacing * 5,
+            "6": $base-spacing * 6,
+            "7": $base-spacing * 7,
+            "8": $base-spacing * 8,
+            "9": $base-spacing * 9,
+            "10": $base-spacing * 10
+        ),
+    ),
+    "padding-left": (
+        "prefix": "p-left",
+        "values": (
+            "0": 0,
+            "1": $base-spacing * 1,
+            "2": $base-spacing * 2,
+            "3": $base-spacing * 3,
+            "4": $base-spacing * 4,
+            "5": $base-spacing * 5,
+            "6": $base-spacing * 6,
+            "7": $base-spacing * 7,
+            "8": $base-spacing * 8,
+            "9": $base-spacing * 9,
+            "10": $base-spacing * 10
+        ),
+    ),
+    "padding-right": (
+        "prefix": "p-right",
+        "values": (
+            "0": 0,
+            "1": $base-spacing * 1,
+            "2": $base-spacing * 2,
+            "3": $base-spacing * 3,
+            "4": $base-spacing * 4,
+            "5": $base-spacing * 5,
+            "6": $base-spacing * 6,
+            "7": $base-spacing * 7,
+            "8": $base-spacing * 8,
+            "9": $base-spacing * 9,
+            "10": $base-spacing * 10
+        ),
+    ),
+    "padding-top": (
+        "prefix": "p-top",
+        "values": (
+            "0": 0,
+            "1": $base-spacing * 1,
+            "2": $base-spacing * 2,
+            "3": $base-spacing * 3,
+            "4": $base-spacing * 4,
+            "5": $base-spacing * 5,
+            "6": $base-spacing * 6,
+            "7": $base-spacing * 7,
+            "8": $base-spacing * 8,
+            "9": $base-spacing * 9,
+            "10": $base-spacing * 10
+        ),
+    ),
+    "padding-bottom": (
+        "prefix": "p-bottom",
+        "values": (
+            "0": 0,
+            "1": $base-spacing * 1,
+            "2": $base-spacing * 2,
+            "3": $base-spacing * 3,
+            "4": $base-spacing * 4,
+            "5": $base-spacing * 5,
+            "6": $base-spacing * 6,
+            "7": $base-spacing * 7,
+            "8": $base-spacing * 8,
+            "9": $base-spacing * 9,
+            "10": $base-spacing * 10
+        ),
+    ),
+    "font-size": (
+        "prefix": "f-size",
+        "values": (
+            "d": 14px,
+            "xs": 8px,
+            "sm": 12px,
+            "md": 16px,
+            "lg": 20px,
+            "xl": 24px,
+        ),
+    ),
+    "border-radius": (
+        "prefix": "b-radius",
+        "values": (
+            "d": $base-radius,
+            "xs": math.div($base-radius, 10),
+            "sm": math.div($base-radius, 6),
+            "md": math.div($base-radius, 3),
+            "lg": math.div($base-radius, 2),
+            "xl": $base-radius + 5,
+            "circle": 50%,
+        ),
+    ),
+    "color": (
+        "prefix": "t-color",
+        "values": (
+            "title": $color-title,
+            "content": $color-content,
+            "primary": $color-primary,
+            "primary2": $color-primary2,
+            "primary3": $color-primary3,
+            "dark-blue": $color-dark-blue,
+            "danger": $color-danger,
+            "secondary": $color-secondary,
+            "warning": $color-warning,
+            "success": $color-success,
+            "info": $color-info,
+            "aqua": $color-aqua,
+            "aqua2": $color-aqua2,
+            "border": $color-border,
+            "white5": $color-white5,
+            "white4": $color-white4,
+            "white3": $color-white3,
+            "white2": $color-white2,
+            "gray2": $color-gray2,
+            "gray": $color-gray,
+            "white": $color-white,
+            "black": $color-black,
+        ),
+    ),
+    "background": (
+        "prefix": "bg",
+        "values": (
+            "title": $color-title,
+            "content": $color-content,
+            "primary": $color-primary,
+            "primary2": $color-primary2,
+            "primary3": $color-primary3,
+            "dark-blue": $color-dark-blue,
+            "danger": $color-danger,
+            "secondary": $color-secondary,
+            "warning": $color-warning,
+            "success": $color-success,
+            "info": $color-info,
+            "aqua": $color-aqua,
+            "aqua2": $color-aqua2,
+            "border": $color-border,
+            "white5": $color-white5,
+            "white4": $color-white4,
+            "white3": $color-white3,
+            "white2": $color-white2,
+            "gray2": $color-gray2,
+            "gray": $color-gray,
+            "white": $color-white,
+            "black": $color-black,
+        ),
+    ),
+);
+
+@each $property, $map in $utilities {
+    $prefix: map.get($map, "prefix");
+    $values: map.get($map, "values");
+
+    @each $key, $value in $values {
+        @if($key == "default"){
+            .#{$prefix}{
+                #{$property}: $value !important;
+            }
+        } @else {
+            .#{$prefix}-#{$key}{
+                #{$property}: $value !important;
+            }
+        }
+    }
+}
+
+@function -sp($columns) {   
+    $base-spacing: $base-spacing * $columns;
+    
+    @return $base-spacing;
+}
+
+@function -sf($e) {
+    @each $property, $map in $utilities{
+        @if $property == "font-size"{
+            $values: map.get($map, "values");
+            @each $key, $value in $values{
+                @if $key == $e{
+                    @return $value;
+                }
+            }
+        }
+    }
+}
+
+@function -br($for){
+    $base: math.div($base-radius, $for);
+
+    @return $base;
+}
+
+@function -c($e) {
+    @each $property, $map in $utilities{
+        @if $property == "color"{
+            $values: map.get($map, "values");
+            @each $key, $value in $values{
+                @if $key == $e{
+                    @return $value;
+                }
+            }
+        }
+    }
+}

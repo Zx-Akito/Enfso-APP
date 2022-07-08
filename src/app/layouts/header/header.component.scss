@@ -1,0 +1,71 @@
+.header{
+    max-width: 100%;
+    background: transparent;
+
+    .container-header{
+        display: flex;
+        margin-top: 49px;
+        margin-left: 34px;
+        margin-right: 34px;
+
+        h2{
+            font-size: 39px;
+            font-weight: 500;
+        }
+    
+        h5{
+            font-weight: 500;
+            color: #808BA5;
+        }
+
+        .user-area{
+            display: flex;
+
+            div img:first-child{
+                margin-right: 10px;
+            }
+
+            .detail-user{
+                text-align: end;
+                margin: 0px 10px 0 20px;
+
+                span{
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #12142D;
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: #808080;
+                }
+            }
+
+            .img-user{
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .search{
+            margin-left: auto;
+            margin-right: 145px;
+
+            .form-inline{
+                img{
+                    position: absolute;
+                    margin-left: 18px;
+                }
+
+                .form-control{
+                    border-radius: 50px;
+                    padding-left: 50px;
+                    height: 40px;
+                    width: 243px;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
