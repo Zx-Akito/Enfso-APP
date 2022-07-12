@@ -4,92 +4,95 @@
 .container-dashboard{
     display: flex;
     justify-content: space-between;
-    margin-left: 32px;
+    margin-left: 32px;              
 
     .detail{
-        display: flex;
         width: 700px;
         height: 360px;
         background-color: $color-white;
         border-radius: 20px;
 
-        img{
-            margin-top: 20px;
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
+        .wrap-detail{
+            display: flex;
 
-        .detail-product{
-            margin-top: 24px;
-            margin-left: 24px;
-
-            .user-area{
-                display: flex;
-                img{
-                    width: 40px;
-                    border-radius: 50px;
-                    margin-left: 0px;
-                }
-
-                .detail-user{
-                    margin: 20px 0px 0 11px;
+            img{
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
     
-                    span{
+            .detail-product{
+                margin-top: 24px;
+                margin-left: 24px;
+    
+                .user-area{
+                    display: flex;
+                    img{
+                        width: 40px;
+                        border-radius: 50px;
+                        margin-left: 0px;
+                    }
+    
+                    .detail-user{
+                        margin: 20px 0px 0 11px;
+        
+                        span{
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: #12142D;
+                        }
+                        p{
+                            font-weight: 500;
+                            font-size: 12px;
+                            color: #808080;
+                        }
+                    }
+                }
+    
+                .detail-bid{
+                    display: flex;
+                    background: #ECF6FF;
+                    width: 275px;
+                    height: 82px;
+                    border-radius: 15px;
+                    
+                    .title{
+                        padding-top: 21px;
+                        margin-bottom: 21px;
+                        margin-left: 27px;
+    
+                        span{
+                            font-size: 11px;
+                        }
+    
+                        h6{
+                            font-size: 17px;
+                        }
+                    }
+                }
+    
+                .btn-property{
+                    display: flex;
+                    
+                    img{
+                        margin-left: 0px;
+                    }
+    
+                    button{
+                        margin-left: 10px;
                         font-weight: 500;
-                        font-size: 16px;
-                        color: #12142D;
-                    }
-                    p{
-                        font-weight: 500;
-                        font-size: 12px;
-                        color: #808080;
+                        font-size: 13px;
                     }
                 }
-            }
-
-            .detail-bid{
-                display: flex;
-                background: #ECF6FF;
-                width: 275px;
-                height: 82px;
-                border-radius: 15px;
-                
-                .title{
-                    padding-top: 21px;
-                    margin-bottom: 21px;
-                    margin-left: 27px;
-
-                    span{
-                        font-size: 11px;
-                    }
-
-                    h6{
-                        font-size: 17px;
-                    }
-                }
-            }
-
-            .btn-property{
-                display: flex;
-                
-                img{
-                    margin-left: 0px;
-                }
-
-                button{
-                    margin-left: 10px;
+    
+                h4{
                     font-weight: 500;
-                    font-size: 13px;
+                    font-size: 29px;
                 }
-            }
-
-            h4{
-                font-weight: 500;
-                font-size: 29px;
-            }
-            
-            p{
-                color: #808080;
+                
+                p{
+                    color: #808080;
+                }
             }
         }
     }
