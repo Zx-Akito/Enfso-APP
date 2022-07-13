@@ -7,11 +7,17 @@ import { IconSvgModule } from './components/icon-svg/icon-svg.module';
 import { LayoutsModule } from './layouts/layouts.module';
 import { BidsComponent } from './pages/bids/bids.component';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
+import { SavedComponent } from './pages/saved/saved.component';
+import { CreatorsComponent } from './pages/creators/creators.component';
+import { WalletComponent } from './pages/wallet/wallet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BidsComponent
+    BidsComponent,
+    SavedComponent,
+    CreatorsComponent,
+    WalletComponent
   ],
   imports: [
     BrowserModule,
