@@ -1,0 +1,162 @@
+@import '../../../../assets/scss/common/variable';
+@import '../../../../assets/scss/bootstrap/button';
+
+
+    .container-content{
+        margin-left: 36px;
+        margin-right: 36px;
+
+        .wrapper{
+            padding-top: 34px;
+
+            a img{
+                margin-left: 20px;
+            }
+
+            .user-img{
+                float: right;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+
+            .withdraw{
+                background: #F2F9FF;
+                margin-top: 115px;
+                width: 100%;
+                height: 243px;
+                border-radius: 25px;
+                text-align: center;
+
+                h6{
+                    font-size: 12px;
+                    font-weight: 600;
+                    padding-top: 27px;
+                }
+
+                h2{
+                    color: $color-primary;
+                }
+
+                span{
+                    font-weight: 400;
+                }
+
+                button{
+                    font-weight: 400;
+                }
+            }
+
+            .detail-side{
+                display: flex;
+                width: 100%;
+                margin-top: 30px;
+
+                .title-side{
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    margin-right: 23px;
+                }
+            }
+        }
+
+        .top-creator{
+            margin-top: 48px;
+            
+            h4{
+                font-weight: 500;
+                font-size: 23px;
+            }
+
+            .creator-area{
+                display: flex;
+                margin-top: 14px;
+
+                button{                    
+                    margin-left: auto;
+                    margin-top: 7px;
+                    font-size: 10px;
+                    width: 72px;
+                    height: 28px;
+                }
+
+                img{
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    margin-left: 0px;
+                }
+
+                .detail-creator{
+                    margin: 5px 0px 0 11px;
+    
+                    span{
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #12142D;
+                    }
+
+                    p{
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #808080;
+                    }
+
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .history{
+            margin-top: 48px;
+            
+            h4{
+                font-weight: 500;
+                font-size: 23px;
+
+                span{
+                    float: right;
+
+                    a{
+                        font-size: 11px;
+                        color: #808080;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .history-area{
+                display: flex;
+                margin-top: 14px;
+
+                img{
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 6px;
+                    margin-left: 0px;
+                }
+
+                .detail-history{
+                    margin: 5px 0px 0 11px;
+    
+                    span{
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #12142D;
+                    }
+
+                    p{
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #808080;
+                    }
+
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
