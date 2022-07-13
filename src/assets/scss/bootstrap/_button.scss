@@ -27,7 +27,15 @@
 
     &.btn-white{
         background: $color-white;
-        border: 1px solid;
+        border: 1px solid #D9D9D9;
+        
+        &:hover{
+            background: #dbdbdb;
+        }
+    }
+
+    &.btn-gray{
+        background: #E4E7EC;
         
         &:hover{
             background: #dbdbdb;
@@ -44,5 +52,10 @@
     &.btn-md{
         width: 107px;
         height: 40px;
+    }
+
+    &.btn-sm{
+        width: 89px;
+        height: 32px;
     }
 }
