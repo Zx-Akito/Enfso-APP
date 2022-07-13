@@ -1,16 +1,34 @@
 @import '../../../../assets/scss/common/variable';
+@import '../../../../assets/scss/bootstrap/button';
 
 .navbar{
     margin-top: 56px;
+    padding: 20px 0px;
 
     h4{
         margin-bottom: 0px;
+    }
+
+    .nav-item{
+        display: flex;
+        align-items: center;
+        height: 26px;
+    
+        &.active{
+            background: #DADAE2;
+            border-radius: 12px;
+        }
+    
+        .nav-link{
+            padding: 0 15px;
+            color: #12142D66;
+        }
     }
 }
 
 .content-trending{
     width: 214px;
-    height: 264px;
+    height: 274px;
     border-radius: 25px;
     background: $color-white;
 
@@ -60,6 +78,13 @@
         }
     }
 
+    a{
+        img{
+            width: 24px;
+            float: right;
+        }
+    }
+
     .user-area{
         display: flex;
         margin-top: 5px;
@@ -77,5 +102,18 @@
             color: #808080;
         }
 
+    }
+
+    .btn-property{
+        display: flex;
+
+        button{
+            font-weight: 500;
+            font-size: 11px;
+        }
+
+        button:last-child{
+            margin-left: 10px;
+        }
     }
 }
