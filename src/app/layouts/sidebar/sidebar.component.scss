@@ -34,12 +34,14 @@
             .navbar-nav{
                 .nav-item{
                     margin-top: 20px;
+                    transition: 0.1 ease;
 
                     &.active{
                         background: $color-gray;
                         border-radius: 35px;
                         padding-top: 10px;
                         padding-bottom: 10px;
+                        transition: 0.1 ease;
 
                         a{
                             color: $color-primary;
